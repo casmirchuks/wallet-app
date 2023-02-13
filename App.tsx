@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Welcome from './screens/Welcome';
 import * as SplashScreen from 'expo-splash-screen';
 
+
+//react navigation
+import Welcome from './screens/Welcome';
+import RootStack from './Navigators/RootStack';
+
 // Keep the splash screen visible while we fetch resources
-// SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync();
 
 //custom font
 import { useFonts } from 'expo-font';
@@ -20,7 +24,7 @@ export default function App() {
   }
 
   return (
-    <Welcome/>
+    <RootStack/>
   );
 }
 
