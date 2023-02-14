@@ -9,5 +9,5 @@ export const Container = styled.View`
     background-color: ${colors.white}
 `;
 
-const ScreenWidth = Dimensions.get("screen").width;
-const ScreenHeight = Dimensions.get("screen").height;
+export const ScreenWidth = Dimensions.get("screen").width;
+export const ScreenHeight = Dimensions.get("screen").height;
